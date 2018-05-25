@@ -1,8 +1,3 @@
-# install.packages('recommenderlab')
-# install.packages('data.table')
-# install.packages('reshape2')
-# install.packages('ggplot2')
-
 library(recommenderlab)
 library(data.table)
 library(reshape2)
@@ -63,11 +58,11 @@ for (c in 1:ncol(genre_matrix)) {
 # Normalize the data
 # Remove bias instances of data 
 # Averages the rating for each user to 0
-
+normalized_ratings_movies <-
 
 
 # Define training and set data
-
+training <- sample(x = c)
 
 
 
@@ -78,8 +73,9 @@ for (c in 1:ncol(genre_matrix)) {
 # Applying the recommender system on the original dataset
 
 # No. of recommendations we want per user 
+recommendations <- 10
 
-
+prediction <- predict()
 
 # Recommendations for the first user
 

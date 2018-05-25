@@ -22,7 +22,7 @@ accuracy = function(actual, predicted) {
 pred <- knn(train = scale(ir_train[,-5]), 
            test = scale(ir_test[,-5]), 
            cl = ir_train$Species, 
-           k = 40)
+           k = 5)
 
 accuracy(ir_test$Species, pred)
 

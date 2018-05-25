@@ -6,7 +6,7 @@
 
 
 ## Uncomment this to install packages
-#install.packages('rvest')
+##install.packages('rvest')
 
 # Load in 'rvest' package
 library('rvest')
@@ -53,8 +53,10 @@ head(rank_data)
 
 
 #Converting the genre data to text
+runtime_data <- html_text(runtime_data)
 
 #Let's have a look at the genre
+head(runtime_data)
 
 #Data-Preprocessing: removing \n
 
@@ -112,9 +114,12 @@ length(gross_data)
 
 
 #Data-Preprocessing: converting gross to numerical
+gross_data <- as.number()
 
 #Let's have another look at the length of gross data
+length(gross_data)
 
+summary(gross_data)
 
 #library('ggplot2')
 
